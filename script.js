@@ -46,16 +46,30 @@
 // Initialise an empty array with the variable name todoItems
 
 let todoItems = [];
+let counter = 0;
 console.log(todoItems);
 
+addToDoItem('make coffee'); 
+
+
 // Function to add a todo to the list
+function addToDoItem(text) {
+  // Implement the logic to add a task here
+  let todoItem = { 
+    id : UNIQUE_VALUE, 
+    text : "Text for the todo", 
+    completed : false 
+  }
+  todoItems.push(todo);
+  counter++;
+  console.log(todoItems);
+  // console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+}
 // It should accept a string as a parameter (text of the todo item)
 // and it should add a new todo item to the todoItems array
 // the function does not need to return anything
-function addToDoItem(text) {
   // Implement the logic to add a task here
-
-  console.log("NOT YET IMPLEMENTED"); // Remove this line when you start working on the function
+ // Remove this line when you start working on the function
 }
 
 // Function to remove a todo to the list
