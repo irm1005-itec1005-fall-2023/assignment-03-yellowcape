@@ -50,7 +50,6 @@ let counter = 0;
 
 addToDoItem("Make Coffee");
 removeToDoItem(0);
-markToDoItemAsCompleted(1);
 
 
 // Function to add a todo to the list
@@ -86,6 +85,7 @@ function removeToDoItem(todoId) {
     if (todoItems[index].id === todoId) 
     {
       todoItems.splice(index, 1);
+      break;
     }
   }
       // Remove this line when you start working on the function
@@ -103,10 +103,13 @@ function markToDoItemAsCompleted(todoId) {
     if (todoItems[index].id === todoId) 
     {
       todoItems[index].completed = true;
+      break;
     }
-    console.log(todoItems[index]);
   }
 }
+markToDoItemAsCompleted(1);
+console.log(todoItems[index]);
+
 
 // Function to delete a task from the array
 // It should accept a number as a parameter (id of the todo item)
@@ -122,6 +125,8 @@ function deleteToDoItemAsCompleted(todoId) {
     }
   }
 }
+
+
 
 // Function to clear all completed tasks
 // Loop through the array of todos, and when you find a todo item that is marked
