@@ -117,7 +117,7 @@ console.log(todoItems[index]);
 // that matches the id passed to the function, remove it from the array
 // the function does not need to return anything, though you can return
 // true or false depending on whether the item was successfully deleted
-function deleteToDoItemAsCompleted(todoId) {
+function deleteToDoItem(todoId) {
   // Implement the logic to mark a task as completed here
   for (let index = 0; index < todoItems.length; index++) 
   {
