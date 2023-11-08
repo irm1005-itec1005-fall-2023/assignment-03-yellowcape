@@ -119,9 +119,12 @@ console.log(todoItems[index]);
 // true or false depending on whether the item was successfully deleted
 function deleteToDoItemAsCompleted(todoId) {
   // Implement the logic to mark a task as completed here
-  for (let index = 0; index < todoItems.length; index++) {
-    if (todoItems[index].id === todoId) {
+  for (let index = 0; index < todoItems.length; index++) 
+  {
+    if (todoItems[index].id === todoId) 
+    {
       todoItems.splice(index, 1);
+      break;
     }
   }
 }
